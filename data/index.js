@@ -1,4 +1,5 @@
 import { CATEGORIES } from './core.js';
+import basicOperations from './basic-operations.js';
 import foundations from './foundations.js';
 import algebra from './algebra.js';
 import geometry from './geometry.js';
@@ -14,7 +15,7 @@ import further from './further.js';
 export { CATEGORIES };
 
 export const TOPICS = [
-  ...foundations, ...algebra, ...geometry, ...calculus, ...statistics,
+  ...basicOperations, ...foundations, ...algebra, ...geometry, ...calculus, ...statistics,
   ...numberTheory, ...discrete, ...linearAlgebra, ...applied, ...advanced, ...further,
 ];
 
