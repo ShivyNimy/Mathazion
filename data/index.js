@@ -11,12 +11,16 @@ import linearAlgebra from './linear-algebra.js';
 import applied from './applied.js';
 import advanced from './advanced.js';
 import further from './further.js';
+import coverageCore from './coverage-core.js';
+import coverageMore from './coverage-more.js';
+import coverageAdvanced from './coverage-advanced.js';
+import coverageFinal from './coverage-final.js';
 
 export { CATEGORIES };
 
 export const TOPICS = [
   ...basicOperations, ...foundations, ...algebra, ...geometry, ...calculus, ...statistics,
-  ...numberTheory, ...discrete, ...linearAlgebra, ...applied, ...advanced, ...further,
+  ...numberTheory, ...discrete, ...linearAlgebra, ...applied, ...advanced, ...further, ...coverageCore, ...coverageMore, ...coverageAdvanced, ...coverageFinal,
 ];
 
 export const TOPIC_BY_ID = Object.fromEntries(TOPICS.map(t => [t.id, t]));

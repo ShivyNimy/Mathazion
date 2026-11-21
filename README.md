@@ -1,6 +1,6 @@
 # Mathazion
 
-A complete, interactive math learning website. It covers **75 topics across 10 branches of mathematics**, with **150 step-by-step worked examples**, **300 practice questions** (hints + full solutions) and **192 formulas**. Everything works offline — including math typesetting — and progress is saved in the browser.
+A complete, interactive math learning website. It covers **124 topics across 10 branches of mathematics**, with **248 step-by-step worked examples**, **496 practice questions** (hints + full solutions) and **331 formulas**. Everything works offline — including math typesetting — and progress is saved in the browser.
 
 ## Features
 
