@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mathazion — 124 math topics, 248 worked examples and 496 practice questions, all explained step by step." />
+  <meta name="theme-color" content="#5b5bd6" />
+  <link rel="canonical" href="https://shivynimy.github.io/Mathazion/" />
+  <meta property="og:url" content="https://shivynimy.github.io/Mathazion/" />
+  <title>Mathazion — Every math topic, explained</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235b5bd6'/%3E%3Ctext x='32' y='44' font-size='38' font-family='Georgia,serif' font-style='italic' text-anchor='middle' fill='white'%3E%CE%A3%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="vendor/katex/katex.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#/" aria-label="Mathazion home">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span class="brand-name">Mathazion</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#/explore" data-nav="explore">Explore</a>
+        <a href="#/practice" data-nav="practice">Practice</a>
+        <a href="#/formulas" data-nav="formulas">Formula sheet</a>
+      </nav>
+      <div class="header-actions">
+        <button class="search-trigger" id="search-trigger" type="button" aria-label="Search topics">
+          <span aria-hidden="true">⌕</span><span class="search-label">Search</span><kbd>/</kbd>
+        </button>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <span id="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="brand small" href="#/"><span class="brand-mark" aria-hidden="true">∑</span><span class="brand-name">Mathazion</span></a>
+        <p>A free, offline-friendly math library built for curious minds.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#/explore">All topics</a>
+        <a href="#/practice">Practice</a>
+        <a href="#/formulas">Formulas</a>
+        <a href="#/explore?category=foundations">Start here</a>
+      </div>
+    </div>
+    <div class="footer-bottom">Made for learning. Progress is saved in your own browser.</div>
+  </footer>
+
+  <div class="modal-backdrop" id="search-modal" hidden>
+    <div class="search-dialog" role="dialog" aria-modal="true" aria-label="Search Mathazion">
+      <div class="search-dialog-input">
+        <span aria-hidden="true">⌕</span>
+        <input id="global-search" type="search" placeholder="Search topics, formulas and concepts…" autocomplete="off" spellcheck="false" />
+        <button type="button" id="close-search" aria-label="Close search">Esc</button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+      <div class="search-hint">Type to search · Enter to open the first result · Esc to close</div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="vendor/katex/katex.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
